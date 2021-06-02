@@ -89,8 +89,22 @@ user-select: none; /* supported by Chrome and Opera */
         margin-bottom: 50px!important;
       }
 
+      .viola_container{
+        padding-left:10vw!important;
+        padding-right:10vw!important;
+      }
+
       .pulsanti_download{
         width:35%;
+      }
+
+      .transparent{
+        background-color: rgb(0, 0, 0, 0)!important;
+      }
+
+      .img-come-funziona{
+        width:50%;
+        margin-top:50px!important;
       }
 
 
@@ -153,7 +167,19 @@ user-select: none; /* supported by Chrome and Opera */
 
       }
 
+      .viola_container{
+        padding-left:15vw!important;
+        padding-right:15vw!important;
+        height:100vh;
+      }
+
       .pulsanti_download{
         width:25%;
       }
+
+      .img-come-funziona{
+        width:70%;
+        margin-top:0px!important;
+      }
+
   }
