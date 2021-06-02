@@ -83,8 +83,8 @@ user-select: none; /* supported by Chrome and Opera */
       }
 
       .card_container{
-        padding-left:100px!important;
-        padding-right:100px!important;
+        padding-left:10vw!important;
+        padding-right:10vw!important;
         margin-top: -50px!important;
         margin-bottom: 50px!important;
       }
