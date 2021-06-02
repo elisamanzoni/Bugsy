@@ -79,7 +79,7 @@ user-select: none; /* supported by Chrome and Opera */
       /* header */
 
       .logo_bugsy_header{
-        height: 30vh;
+        height: 40vh;
       }
 
       .card_container{
@@ -87,6 +87,10 @@ user-select: none; /* supported by Chrome and Opera */
         padding-right:10vw!important;
         margin-top: -50px!important;
         margin-bottom: 50px!important;
+      }
+
+      .pulsanti_download{
+        width:35%;
       }
 
 
@@ -147,5 +151,9 @@ user-select: none; /* supported by Chrome and Opera */
         padding-right:15vw!important;
         margin-top: -70px!important;
 
+      }
+
+      .pulsanti_download{
+        width:25%;
       }
   }
