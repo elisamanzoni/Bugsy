@@ -90,10 +90,19 @@ user-select: none; /* supported by Chrome and Opera */
       }
 
       .viola_container{
-        padding-left:10vw!important;
-        padding-right:10vw!important;
+        padding-left:8vw!important;
+        padding-right:8vw!important;
         padding-bottom: 50px!important;
         padding-top: 50px!important;
+      }
+
+      .team_container{
+        padding-left:8vw!important;
+        padding-right:8vw!important;
+        padding-bottom: 50px!important;
+        padding-top: 150px!important;
+        margin-top: -150px;
+        /* height:100vh; */
       }
 
       .pulsanti_download{
@@ -176,10 +185,17 @@ user-select: none; /* supported by Chrome and Opera */
       }
 
       .viola_container{
-        padding-left:15vw!important;
-        padding-right:15vw!important;
+        padding-left:10vw!important;
+        padding-right:10vw!important;
         padding-bottom: 50px!important;
         padding-top: 50px!important;
+        /* height:100vh; */
+      }
+
+      .team_container{
+        padding-left:10vw!important;
+        padding-right:10vw!important;
+        margin-top: -150px;
         /* height:100vh; */
       }
 
