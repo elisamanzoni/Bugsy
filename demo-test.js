@@ -94,13 +94,21 @@ attitudini_container.each(function(x) {
   })
 })
 
-  $("#button_onboarding").click(function() {
-    $("#onboarding").addClass("sparisci_fade");
+$("#button_results").click(function() {
+  $("#popup_results").addClass("sparisci_fade");
 
-    setTimeout(function() {
-      $("#onboarding").addClass("display_none");
-      }, 900)
-  });
+  setTimeout(function() {
+    $("#popup_results").addClass("display_none");
+  }, 900)
+});
+
+$("#button_onboarding").click(function() {
+  $("#onboarding").addClass("sparisci_fade");
+
+  setTimeout(function() {
+    $("#onboarding").addClass("display_none");
+  }, 900)
+});
 
 function aumento_lavoro(x) {
   step++;
@@ -180,33 +188,32 @@ function aumento_attitudini(x) {
       console.log("sociale:" + sociale);
     }
 
-//compare prossimo step
+    //compare prossimo step
     attitudini_container.each(function(x) {
-        $(this).addClass("sparisci_fade");
-      })
+      $(this).addClass("sparisci_fade");
+    })
 
-      setTimeout(function() {
-        attitudini_container.each(function(x) {
-          $(this).html(testi_attitudini[((step-3) * 6) + x +2]);
-            $(this).addClass("compari_fade");
-        });
-      }, 900)
+    setTimeout(function() {
+      attitudini_container.each(function(x) {
+        $(this).html(testi_attitudini[((step - 3) * 6) + x + 2]);
+        $(this).addClass("compari_fade");
+      });
+    }, 900)
 
-      setTimeout(function() {
-        attitudini_container.each(function(x) {
-          $(this).removeClass("sparisci_fade");
-          $(this).removeClass("compari_fade");
+    setTimeout(function() {
+      attitudini_container.each(function(x) {
+        $(this).removeClass("sparisci_fade");
+        $(this).removeClass("compari_fade");
 
-        });
-      }, 1900)
+      });
+    }, 1900)
 
 
 
-//aumento step attitudini
+    //aumento step attitudini
     step_attitudini++;
 
-  }
-  else if (step_attitudini == 1) {
+  } else if (step_attitudini == 1) {
     //aumento socialità
     if (x == 0) {
       abitudinario++;
@@ -217,33 +224,32 @@ function aumento_attitudini(x) {
     }
 
     //compare prossimo step
-        attitudini_container.each(function(x) {
-            $(this).addClass("sparisci_fade");
-          })
+    attitudini_container.each(function(x) {
+      $(this).addClass("sparisci_fade");
+    })
 
-          setTimeout(function() {
-            attitudini_container.each(function(x) {
-              $(this).html(testi_attitudini[((step-3) * 6) + x + 4]);
-                $(this).addClass("compari_fade");
-            });
-          }, 900)
+    setTimeout(function() {
+      attitudini_container.each(function(x) {
+        $(this).html(testi_attitudini[((step - 3) * 6) + x + 4]);
+        $(this).addClass("compari_fade");
+      });
+    }, 900)
 
-          setTimeout(function() {
-            attitudini_container.each(function(x) {
-              $(this).removeClass("sparisci_fade");
-              $(this).removeClass("compari_fade");
+    setTimeout(function() {
+      attitudini_container.each(function(x) {
+        $(this).removeClass("sparisci_fade");
+        $(this).removeClass("compari_fade");
 
-            });
-          }, 1900)
+      });
+    }, 1900)
 
 
-//aumento step abitudini
+    //aumento step abitudini
     step_attitudini++;
 
-  }
-  else if (step_attitudini == 2) {
-      console.log(step);
-    if (step < 5){
+  } else if (step_attitudini == 2) {
+    console.log(step);
+    if (step < 5) {
 
       //aumento socialità
       if (x == 0) {
@@ -254,47 +260,45 @@ function aumento_attitudini(x) {
         console.log("attivo:" + attivo);
       }
 
-  //compare prossimo step
+      //compare prossimo step
       sparisci_compari_attitudini();
 
-  //aumento step abitudini
-      step_attitudini=0;
+      //aumento step abitudini
+      step_attitudini = 0;
       step++;
 
+    } else {
+      //aumento socialità
+      if (x == 0) {
+        pigro++;
+        console.log("pigro:" + pigro);
+      } else if (x == 1) {
+        attivo++;
+        console.log("attivo:" + attivo);
+      }
+
+      //compare prossimo step
+      sparisci_compari_attitudini();
+
+      //aumento step abitudini
+      step_attitudini = 0;
+
+
+      sparisci_attitudini();
     }
-
-else{
-  //aumento socialità
-  if (x == 0) {
-    pigro++;
-    console.log("pigro:" + pigro);
-  } else if (x == 1) {
-    attivo++;
-    console.log("attivo:" + attivo);
-  }
-
-//compare prossimo step
-  sparisci_compari_attitudini();
-
-//aumento step abitudini
-  step_attitudini=0;
-
-
-  sparisci_attitudini();
-}
 
   }
 }
 
 function sparisci_compari_attitudini() {
- modifica_domanda();
+  modifica_domanda();
 
   attitudini_container.each(function(x) {
     $(this).addClass("sparisci_fade");
 
     setTimeout(function() {
       attitudini_container.each(function(x) {
-        $(this).html(testi_attitudini[((step-3) * 6 ) + x]);
+        $(this).html(testi_attitudini[((step - 3) * 6) + x]);
         if (x < 2) {
           $(this).addClass("compari_fade");
         } else {
@@ -333,7 +337,7 @@ function modifica_domanda() {
 }
 
 function sparisci_attitudini() {
- $("#domanda").addClass("sparisci_fade");
+  $("#domanda").addClass("sparisci_fade");
 
   attitudini_container.each(function(x) {
     $(this).addClass("sparisci_fade");
@@ -349,15 +353,20 @@ function sparisci_attitudini() {
 
       });
 
-          results();
-          $("#risultato").removeClass("display_none");
-          $("#risultato").addClass("compari_fade");
+      results();
+      $("#popup_results").removeClass("display_none");
+      $("#popup_results").addClass("compari_fade");
+
     }, 900)
 
     setTimeout(function() {
-          $("#risultato").removeClass("opacity_0");
-          $("#risultato").removeClass("compari_fade");
+      $("#popup_results").removeClass("opacity_0");
+      $("#popup_results").removeClass("compari_fade");
+      $("#risultato").removeClass("display_none");
+      $("#risultato").removeClass("opacity_0");
+
     }, 1900)
+
 
 
 
@@ -366,76 +375,62 @@ function sparisci_attitudini() {
 
 function results() {
 
- if (sociale > solitario && curioso > abitudinario && attivo > pigro){
-   $("#risultato_attitudini").html("APE");
-  $("#img_insetto").attr("src", "assets/APE.png");
-  sex = "a";
-   console.log("APE");
- }
-
- else if (sociale > solitario && curioso > abitudinario && attivo < pigro){
-   $("#risultato_attitudini").html("VESPA");
-     $("#img_insetto").attr("src", "assets/VESPA.png");
-       sex = "a";
-   console.log("VESPA");
- }
-
- else if (sociale > solitario && curioso < abitudinario && attivo > pigro){
-   $("#risultato_attitudini").html("FORMICA");
-     $("#img_insetto").attr("src", "assets/FORMICA.png");
-       sex = "a";
-   console.log("FORMICA");
- }
-
- else if (sociale > solitario && curioso < abitudinario && attivo < pigro){
-   $("#risultato_attitudini").html("TERMITE");
-     $("#img_insetto").attr("src", "assets/TERMITE.png");
-       sex = "a";
-   console.log("TERMITE");
- }
-
- else if (sociale < solitario && curioso > abitudinario && attivo > pigro){
-   $("#risultato_attitudini").html("COCCINELLA");
-     $("#img_insetto").attr("src", "assets/COCCINELLA_ok.png");
-       sex = "a";
-   console.log("COCCINELLA");
- }
-
- else if (sociale < solitario && curioso > abitudinario && attivo < pigro){
-   $("#risultato_attitudini").html("CAVALLETTA");
-     $("#img_insetto").attr("src", "assets/CAVALLETTA.png");
-       sex = "a";
-   console.log("CAVALLETTA");
- }
-
- else if (sociale < solitario && curioso < abitudinario && attivo > pigro){
-   $("#risultato_attitudini").html("BRUCO");
-     $("#img_insetto").attr("src", "assets/BRUCO_ok.png");
-       sex = "o";
-   console.log("BRUCO");
- }
-
- else if (sociale < solitario && curioso < abitudinario && attivo < pigro){
-   $("#risultato_attitudini").html("INSETTO STECCO");
-     $("#img_insetto").attr("src", "assets/INSETTOSTECCO.png");
-       sex = "o";
-   console.log("INSETTO STECCO");
- }
+  if (sociale > solitario && curioso > abitudinario && attivo > pigro) {
+    $("#risultato_attitudini").html("APE");
+    $("#img_insetto").attr("src", "assets/APE.png");
+    sex = "a";
+    console.log("APE");
+  } else if (sociale > solitario && curioso > abitudinario && attivo < pigro) {
+    $("#risultato_attitudini").html("VESPA");
+    $("#img_insetto").attr("src", "assets/VESPA.png");
+    sex = "a";
+    console.log("VESPA");
+  } else if (sociale > solitario && curioso < abitudinario && attivo > pigro) {
+    $("#risultato_attitudini").html("FORMICA");
+    $("#img_insetto").attr("src", "assets/FORMICA.png");
+    sex = "a";
+    console.log("FORMICA");
+  } else if (sociale > solitario && curioso < abitudinario && attivo < pigro) {
+    $("#risultato_attitudini").html("TERMITE");
+    $("#img_insetto").attr("src", "assets/TERMITE.png");
+    sex = "a";
+    console.log("TERMITE");
+  } else if (sociale < solitario && curioso > abitudinario && attivo > pigro) {
+    $("#risultato_attitudini").html("COCCINELLA");
+    $("#img_insetto").attr("src", "assets/COCCINELLA_ok.png");
+    sex = "a";
+    console.log("COCCINELLA");
+  } else if (sociale < solitario && curioso > abitudinario && attivo < pigro) {
+    $("#risultato_attitudini").html("CAVALLETTA");
+    $("#img_insetto").attr("src", "assets/CAVALLETTA.png");
+    sex = "a";
+    console.log("CAVALLETTA");
+  } else if (sociale < solitario && curioso < abitudinario && attivo > pigro) {
+    $("#risultato_attitudini").html("BRUCO");
+    $("#img_insetto").attr("src", "assets/BRUCO_ok.png");
+    sex = "o";
+    console.log("BRUCO");
+  } else if (sociale < solitario && curioso < abitudinario && attivo < pigro) {
+    $("#risultato_attitudini").html("INSETTO STECCO");
+    $("#img_insetto").attr("src", "assets/INSETTOSTECCO.png");
+    sex = "o";
+    console.log("INSETTO STECCO");
+  }
 
 
- if (lavoro < 4) {
-   $("#risultato_lavoro").html("Indaffarat" + sex);
-   console.log("Indaffarata");
- } else if (lavoro > 3 && lavoro <= 6) {
-   $("#risultato_lavoro").html("Laborios" + sex);
-         console.log("Laboriosa");
- } else if (lavoro >= 7 && lavoro <= 9) {
-   $("#risultato_lavoro").html("Moderat" + sex);
-         console.log("Moderata");
- } else {
-   $("#risultato_lavoro").html("Equilibrat" + sex);
-         console.log("Equilibrata");
-}
+  if (lavoro < 4) {
+    $("#risultato_lavoro").html("Indaffarat" + sex);
+    console.log("Indaffarata");
+  } else if (lavoro > 3 && lavoro <= 6) {
+    $("#risultato_lavoro").html("Laborios" + sex);
+    console.log("Laboriosa");
+  } else if (lavoro >= 7 && lavoro <= 9) {
+    $("#risultato_lavoro").html("Moderat" + sex);
+    console.log("Moderata");
+  } else {
+    $("#risultato_lavoro").html("Equilibrat" + sex);
+    console.log("Equilibrata");
+  }
 
 
 }

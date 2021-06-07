@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
 
-      <!-- Bootstrap CSS -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet">
-      <link href="demo-test.css" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title>Bugsy Test</title>
+  <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link href="demo-test.css" rel="stylesheet">
 
-  </head>
-  <body class="bg-third-custom body_test mb-0">
+  <title>Bugsy Test</title>
 
-    <div id="onboarding" class="onboarding border-0 shadow p-3">
+</head>
 
-      <div class="row d-flex align-items-center" style="height: 100%">
-        <div class="col-12">
+<body class="bg-third-custom body_test mb-0">
 
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-          <div class="text-5 text-center onboarding_text"><strong> Ciao!</strong> <br>
-            Ora ti faremo alcune domande per capire chi sei e quali sono i tuoi interessi per personalizzare la tua esperienza.
-  Non ci vorrà molto!</div>
-</div>
-</div>
+  <div id="onboarding" class="onboarding  body_test  border-0 shadow p-3 bg-white ">
 
-<div class="row">
-  <div class="col-12 d-flex justify-content-center">
-  <button id="button_onboarding" type="button" class="btn bg-first-custom text-white btn-lg mb-5 mt-4">INIZIA</button>
-</div>
-</div>
+    <div class="row d-flex align-items-center" style="height: 100%">
+      <div class="col-12">
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="text-5 text-center onboarding_text"><strong> Ciao!</strong> <br>
+              Ora ti faremo alcune domande per capire chi sei e quali sono i tuoi interessi per personalizzare la tua esperienza.
+              Non ci vorrà molto!</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button id="button_onboarding" type="button" class="btn btn-lg button_custom mb-5 mt-4 shadow text-6">INIZIA</button>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="row test_container d-flex align-items-center">
-<div class="col-12">
-
-  <div class="row my-2">
-    <div class="col-12 d-flex align-items-stretch justify-content-center">
-
-    <div id="domanda" class="domanda text-center fs-3 mb-lg-5 mb-3"> Un collega ti propone una pausa caffè: cosa rispondi? </div>
-</div>
-</div>
-
-<div class="row my-2">
-  <div class="col-12 d-flex align-items-stretch justify-content-center">
-    <button id="lavoro_1" class="lavoro_container border-0 shadow p-3"> No, grazie. Devo continuare a lavorare. </button>
-    <button id="lavoro_2" class="lavoro_container border-0 shadow p-3"> Ora non posso. Se riesco, più tardi. </button>
-  </div>
   </div>
 
-  <div class="row my-2 ">
-    <div class="col-12 d-flex align-items-stretch justify-content-center">
-    <button id="lavoro_3" class="lavoro_container border-0 shadow p-3"> Mando un paio di mail e arrivo! </button>
-    <button id="lavoro_4" class="lavoro_container border-0 shadow p-3"> Volentieri, vengo subito! </button>
+  <div id="popup_results" class="onboarding  body_test  border-0 p-3  display_none bg-white">
+
+    <div class="row d-flex align-items-center" style="height: 100%">
+      <div class="col-12">
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="text-5 text-center onboarding_text"><strong> Sei pronto?</strong> <br>
+              Abbiamo analizzato le tue risposte e abbiamo individuato l'insetto più adatto a te. Sei pronto a scoprirlo?</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button id="button_results" type="button" class="btn btn-lg button_custom mb-5 mt-4 shadow text-6">SCOPRI IL RISULTATO</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row my-2">
-    <div class="col-12 d-flex align-items-stretch justify-content-center">
+  <div class="row test_container d-flex align-items-center">
+    <div class="col-12">
 
-    <button id="attitudini_1" class="attitudini_container display_none opacity_0 border-0 shadow p-3"> Preferisco stare da solo </button>
-    <button id="attitudini_2" class="attitudini_container display_none border-0 shadow p-3"> Mi piace stare in compagnia </button>
-  </div>
-</div>
+      <div class="row my-2">
+        <div class="col-12 d-flex align-items-stretch justify-content-center">
+
+          <div id="domanda" class="domanda text-center mb-lg-5 text-5 mb-3"> Un collega ti propone una pausa caffè: cosa rispondi? </div>
+        </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-12 d-flex align-items-stretch justify-content-center">
+          <button id="lavoro_1" class="lavoro_container text-5 border-0 shadow p-3"> No, grazie. Devo continuare a lavorare. </button>
+          <button id="lavoro_2" class="lavoro_container text-5 border-0 shadow p-3"> Ora non posso. Se riesco, più tardi. </button>
+        </div>
+      </div>
+
+      <div class="row my-2 ">
+        <div class="col-12 d-flex align-items-stretch justify-content-center">
+          <button id="lavoro_3" class="lavoro_container text-5 border-0 shadow p-3"> Mando un paio di mail e arrivo! </button>
+          <button id="lavoro_4" class="lavoro_container text-5 border-0 shadow p-3"> Volentieri, vengo subito! </button>
+        </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-12 d-flex align-items-stretch justify-content-center">
+
+          <button id="attitudini_1" class="attitudini_container text-5 display_none opacity_0 border-0 shadow p-3"> Preferisco stare da solo </button>
+          <button id="attitudini_2" class="attitudini_container text-5 display_none border-0 shadow p-3"> Mi piace stare in compagnia </button>
+        </div>
+      </div>
 
 
 
     </div>
-</div>
-
-
-
-<div id="risultato" class="pt-5 text-center display_none">
-
-  <div class="row my-2">
-    <div class="col-12 d-flex align-items-top justify-content-center">
-
-  <ul class="list-group border-0 align-self-center">
-    <li class="list-group-item bg-transparent border-0">
-     <img id="img_insetto" src="assets/COCCINELLA_ok.png" class="" style="width: 200px;">
-   </li>
-
-   <li class="list-group-item bg-transparent border-0">
-  <span class="text-center fs-5">Il tuo risultato: <br></span>
-  <span id="risultato_attitudini" class="text-center fw-bold fs-1 lh-sm">Insetto</span>  <br>
-  <span id="risultato_lavoro" class="text-center fw-bold fs-1 lh-1">Indaffarato</span>
-</li>
-
-<li class="list-group-item bg-transparent border-0">
-  <div class="gap-2 d-flex justify-content-center">
-    <a href="demo-test.html" ><button type="button" class="btn bg-first-custom text-white btn-lg mb-5">RIFAI IL TEST</button></a>
   </div>
-</li>
-
-</ul>
-
-</div>
-</div>
-
-</div>
 
 
 
+  <div id="risultato" class="pt-5 text-center display_none" style="z-index: 0;">
+
+    <div class="row my-2">
+      <div class="col-12 d-flex align-items-top justify-content-center">
+
+        <ul class="list-group border-0 align-self-center">
+          <li class="list-group-item bg-transparent border-0">
+            <img id="img_insetto" src="assets/COCCINELLA_ok.png" class="img_insetto">
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 text-5">
+            <span class="text-center">Il tuo risultato: <br></span>
+            <span id="risultato_attitudini" class="text-center fw-bold fs-1 lh-sm">Insetto</span> <br>
+            <span id="risultato_lavoro" class="text-center fw-bold fs-1 lh-1">Indaffarato</span>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 text-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="text-6 text-center onboarding_text">
+                Proprio come la coccinella, preferisci stare nella tua bolla anziché partecipare a eventi sociali o conoscere persone nuove. Ciò ti permette di <strong>dedicarti a te stesso</strong> facendo ciò che ami e ciò di cui hai bisogno. Non
+                ti piace la monotonia e <strong>tendi spesso verso i cambiamenti</strong> senza porti limiti. Sei sempre <strong>in movimento</strong> e questo è uno dei tuoi punti di forza: non ti lasci abbattere di fronte alle difficoltà, che vedi
+                spesso come stimoli
+                per dare il meglio di te.</div>
+            </div>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 text-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="text-5 text-center onboarding_text mt-3">
+                Vuoi scoprire quale routine è più adatta a te? <br>
+                <strong> Scarica subito Bugsy </strong></div>
+            </div>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 text-5 d-flex justify-content-center">
+            <div class="d-flex align-items-center justify-content-center pulsanti_demo">
+              <img src="assets/download google.png" class="mx-3 pulsanti_download">
+              <img src="assets/download apple.png" class="mx-3 pulsanti_download">
+            </div>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0">
+            <div class="gap-2 d-flex justify-content-center">
+              <a href="demo-test.html"><button type="button" class="btn button_custom btn-lg mb-5 mt-4">RIFAI IL TEST</button></a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
 
 
 
 
-  </body>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="demo-test.js"></script>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="demo-test.js"></script>
+
 </html>

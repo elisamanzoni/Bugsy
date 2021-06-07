@@ -60,6 +60,22 @@ body {
   font-size: 2vh;
 }
 
+.text-6{
+  font-size: 1.75vh;
+}
+
+.button_custom{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: 60vw;
+}
+
+.button_custom:active{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
 .pallino-active {
   opacity: 100% !important;
 }
@@ -154,6 +170,22 @@ body {
     font-size: 1.5vw;
     /* color: red; */
   }
+
+  .text-6{
+    font-size: 1.25vw;
+    /* color: red; */
+  }
+
+  .button_custom{
+    width: 30vw;
+  }
+
+
+  .button_custom:hover{
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
 
   /* desktop */
   .navbar-mobile {
