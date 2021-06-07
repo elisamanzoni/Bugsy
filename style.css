@@ -57,7 +57,7 @@ body {
 }
 
 .text-5{
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .pallino-active {
@@ -151,7 +151,8 @@ body {
 @media only screen and (min-width: 900px) {
 
   .text-5{
-    font-size: 25px;
+    font-size: 1.5em;
+    color: red;
   }
 
   /* desktop */
