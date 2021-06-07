@@ -57,11 +57,11 @@ body {
 }
 
 .text-5{
-  font-size: 2vh;
+  font-size: 2vh!important;
 }
 
 .text-6{
-  font-size: 1.75vh;
+  font-size: 1.75vh!important;
 }
 
 .button_custom{
@@ -167,12 +167,12 @@ body {
 @media only screen and (min-width: 900px) {
 
   .text-5{
-    font-size: 1.5vw
+    font-size: 1.5vw!important;
     /* color: red; */
   }
 
   .text-6{
-    font-size: 1.25vw;
+    font-size: 1.25vw!important;
     /* color: red; */
   }
 
