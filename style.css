@@ -56,6 +56,10 @@ body {
   color: var(--background-color);
 }
 
+.text-5{
+  font-size: 18px;
+}
+
 .pallino-active {
   opacity: 100% !important;
 }
@@ -145,6 +149,10 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+
+  .text-5{
+    font-size: 25px;
+  }
 
   /* desktop */
   .navbar-mobile {

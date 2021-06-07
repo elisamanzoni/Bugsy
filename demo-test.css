@@ -111,6 +111,20 @@ background-color: white!important;
 
 }
 
+.onboarding{
+  position: fixed;
+  width: 82vw;
+  height: 80vh;
+  margin: 10vh 9vw;
+  /* border: 1px solid black; */
+  background-color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  z-index:2;
+}
+
+
+
 @media only screen and (min-width: 900px) {
 
   /* desktop */
@@ -155,9 +169,11 @@ background-color: white!important;
   }
 
   .body_test{
-
       background-image: url("assets/Background_light.png");
+  }
 
+  .onboarding_text{
+    width:50%;
   }
 
 }

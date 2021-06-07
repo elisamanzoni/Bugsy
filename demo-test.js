@@ -94,7 +94,13 @@ attitudini_container.each(function(x) {
   })
 })
 
+  $("#button_onboarding").click(function() {
+    $("#onboarding").addClass("sparisci_fade");
 
+    setTimeout(function() {
+      $("#onboarding").addClass("display_none");
+      }, 900)
+  });
 
 function aumento_lavoro(x) {
   step++;
