@@ -101,6 +101,14 @@ body {
   /* height:100vh; */
 }
 
+.test_container {
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
+  padding-bottom: 50px !important;
+  padding-top: 50px !important;
+  height: 100vh;
+}
+
 .pulsanti_download {
   width: 35%;
 }
@@ -190,6 +198,14 @@ body {
     padding-bottom: 50px !important;
     padding-top: 50px !important;
     /* height:100vh; */
+  }
+
+  .test_container {
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+    padding-bottom: 50px !important;
+    padding-top: 50px !important;
+    height:100vh;
   }
 
   .team_container {
