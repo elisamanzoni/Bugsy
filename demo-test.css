@@ -128,8 +128,8 @@ background-color: white!important;
 }
 
 .img_logo{
-  width: 40vw;
-  height: 38vw;
+  width: 40vw!important;
+  height: 38vw!important;
 }
 
 
@@ -195,8 +195,8 @@ background-color: white!important;
   }
 
   .img_logo{
-    width: 15vw;
-    height:14vw;
+    width: 15vw!important;
+    height:14vw!important;
   }
 
 }
