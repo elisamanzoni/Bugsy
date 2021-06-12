@@ -56,8 +56,12 @@ body {
   color: var(--background-color);
 }
 
+.text-4{
+  font-size: 2.5vh!important;
+}
+
 .text-5{
-  font-size: 2vh!important;
+  font-size: 2.25vh!important;
 }
 
 .text-6{
@@ -69,6 +73,18 @@ body {
   color: black;
   border-radius: 20px;
   width: 60vw;
+}
+
+.button_custom2{
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 20px;
+  width: 60vw;
+}
+
+.button_custom2:active{
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .button_custom:active{
@@ -166,6 +182,11 @@ body {
 
 @media only screen and (min-width: 900px) {
 
+  .text-4{
+    font-size: 1.75vw!important;
+    /* color: red; */
+  }
+
   .text-5{
     font-size: 1.5vw!important;
     /* color: red; */
@@ -182,6 +203,16 @@ body {
 
 
   .button_custom:hover{
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+  .button_custom2{
+    width: 30vw;
+  }
+
+
+  .button_custom2:hover{
     background-color: var(--secondary-color);
     color: white;
   }
