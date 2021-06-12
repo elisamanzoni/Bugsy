@@ -64,6 +64,12 @@ var testi_attitudini = [
 var lavoro_container = $(".lavoro_container");
 var attitudini_container = $(".attitudini_container");
 
+if($( window ).width() > 900){
+  $("#logo_demo").attr("src","assets/logo_insetti_desktop.png");
+    $("#logo_demo").addClass("img_logo");
+  console.log("immagine");
+}
+
 //click su risposte lavoro
 lavoro_container.each(function(x) {
   $(this).click(function() {
